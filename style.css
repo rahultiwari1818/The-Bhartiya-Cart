@@ -412,6 +412,9 @@ footer a:hover {
     main{
         padding: 0;
     }
+    .heading-name{
+        font-size: 400%;
+    }
     .imgdiv{
         position: relative;
     }
@@ -426,6 +429,10 @@ footer a:hover {
 @media (max-width:850px) and (min-width:500px) {
     main{
         padding: 0px;
+    }
+
+    .heading-name{
+        font-size: 300%;
     }
     .rowFlx {
         display: block;
@@ -502,13 +509,18 @@ footer a:hover {
         float: none;
         margin-left: 30%;
     }
+    .heading-name{
+        font-size: 280%;
+    }
 }
 
 @media (max-width:500px) and (min-width:350px) {
     .rowFlx {
         display: block;
     }
-
+    .heading-name{
+        font-size: 220%;
+    }
     .header-main h1  {
         font-size: 15px;
         float: none;
