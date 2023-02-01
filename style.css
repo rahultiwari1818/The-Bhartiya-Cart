@@ -1,0 +1,674 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cont {
+    margin-top: 0.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0.5%;
+    padding: 2%;
+}
+
+.header-main {
+    padding: 10px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main h1 a {
+    color: black;
+}
+
+
+.bar {
+    top: 0;
+    float: initial;
+    z-index: 10;
+    background-color: rgb(18, 26, 50);
+    padding: 10px;
+    position: sticky;
+}
+
+.navbtn {
+    font-size: 20px;
+    background: none;
+    outline: none;
+    color: #fff;
+}
+
+.navbtn:hover {
+    outline: 1px solid white;
+}
+
+.left {
+    float: right;
+}
+
+.left:hover {
+    color: red;
+}
+
+#NavSearchSelect {
+    /* padding: 5px; */
+    background: rgba(0, 0, 0, .10);
+}
+
+#DivNavSearch {
+    display: flex;
+}
+
+#NavSearch {
+    width: 100%;
+}
+
+.NavSearch:focus {
+    outline: 2px solid gold;
+}
+
+#search {
+    padding: 3px;
+    background-color: gold;
+    border: none;
+}
+#search:hover{
+    cursor: pointer;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 80%;
+}
+
+.rowFlx {
+    display: flex;
+}
+
+.product {
+    padding: 5px;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+footer {
+    background-color: rgb(18, 26, 50);
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 7px;
+    color: white;
+}
+
+footer a:hover {
+    color: red;
+    outline: 2px solid white;
+}
+
+.f1 {
+    padding: 2%;
+}
+
+.bottom {
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+.SMoreBtn {
+
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+    margin-top: 10%;
+}
+
+.MoreBtn {
+    margin: 1%;
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+}
+
+.MoreBtn:hover {
+    font-weight: 500;
+    box-shadow: 2px 2px 2px 2px gold;
+}
+
+.imgS:hover {
+
+    transform: scale(1.5);
+    transition: transform 0.5s;
+    transform: scale(1.15);
+
+}
+/* ---------Login Page----------------------- */
+
+.header {
+    padding: 10px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1 a {
+    color: black;
+}
+
+#main .cont-form {
+    margin-top: 40%;
+    margin-bottom: 5%;
+    margin-left: 40%;
+    margin-right: 30%;
+    top: 70%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+#main .cont-form h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#main .cont-form .user-box {
+    position: relative;
+}
+
+#main .cont-form .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+#main .cont-form .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+#main .cont-form .user-box input:focus~label,
+#main .cont-form .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.btn1 {
+    width: 75%;
+    background-color: #fff;
+    color: red;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn1:hover {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn1-SL {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    color: red;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.btn1-SL:hover{
+    background-color: red;
+    color: white;
+}
+
+.icn {
+    background-color: #fff;
+    border: none;
+}
+
+.f1 {
+    padding: 3%;
+}
+
+.formerror {
+    color: red;
+}
+
+.bottom {
+    margin-right: 25%;
+    margin-left: 25%;
+}
+.color-gold {
+    color: gold;
+}
+
+.color-white {
+    color: white;
+}
+
+.button-sty {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+}
+/*----------------------- mobile 4 style --------------------*/
+.li {
+    margin-left: 10px;
+}
+.heading-name{
+    /* font-style: italic; */
+    font-family:cursive;
+    font-size:500%;
+}
+.color-green {
+    color: green;
+}
+.btn1-m {
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    margin: 20px;
+    width: 100%;
+}
+
+.btn1-m-AC {
+    background-color: yellow;
+}
+
+.btn1-m-BN {
+    background-color: orange;
+}
+
+.row-art{
+    display:flex
+}
+.wid-40{
+    width:40%;
+}
+.wid-20{
+    width: 20%;
+}
+
+/* ---------------------------Product Main Pages-------------------- */
+#maincont {
+    border: 2px solid green;
+}
+
+.rowcont {
+    justify-content: space-evenly;
+    flex-direction: row;
+    display: flex;
+    padding: 5px;
+}
+.subdiv {
+
+    flex: 1;
+    margin: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 2px solid rgba(167, 165, 165, 0.857);
+    background-color: rgb(215, 214, 214);
+    height: 200px;
+    padding: 10px;
+}
+
+.subdiv:hover {
+    transform: scale(1.15);
+    transition: transform 0.5s;
+    transform: scale(1.03);
+    opacity: 0.5s;
+    opacity: 1;
+}
+
+.imgdiv {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: 10px;
+    flex: 1;
+    display: flex;
+}
+
+.imgstyle {
+    flex: 1;
+}
+
+.imgstyle:hover {
+    transform: scale(1.15);
+    transition: transform 0.5s;
+    transform: scale(1.03);
+}
+
+.p_infodiv {
+    position: absolute;
+    right: 0px;
+    display: inline-block;
+}
+
+.p_name {
+    font-size: 12.5px;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.p_oldprice {
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+.p_discount {
+    color: red;
+    font-size: 16px;
+}
+
+.p_netvalue {
+    font-size: 17;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+/* -------------------Media queries ---------------------*/
+@media (max-width:1200px) and (min-width:850px) {
+    main{
+        padding: 0;
+    }
+    .imgdiv{
+        position: relative;
+    }
+    .p_infodiv{
+        position: relative;
+    }
+    .subdiv{
+        display: block;
+        height: fit-content;
+    }
+}
+@media (max-width:850px) and (min-width:500px) {
+    main{
+        padding: 0px;
+    }
+    .rowFlx {
+        display: block;
+    }
+
+    .header-main h1 {
+        font-size: 25px;
+
+    }
+    .aboutUsh1{
+        font-size: 25px;
+
+    }
+
+    .header-main img {
+        float: none;
+    }
+
+    #DivNavSearch {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .NavSearch {
+        width: 50%
+    }
+
+    #NavSearchSelect {
+        width: 50%;
+    }
+
+    .bar {
+        padding: 10px;
+    }
+
+    .bar button {
+        font-size: 10px;
+    }
+
+    .bar a {
+        font-size: 10px;
+    }
+
+    .f1 {
+        padding: 10px;
+    }
+
+    .f1 a {
+        font-size: 10px;
+    }
+
+    .f1 img {
+        float: none;
+        margin-left: 10%;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    footer a {
+        padding: 5px;
+    }
+
+    .bottom {
+        margin-left: 0%;
+        margin-right: 0%;
+        font-size: 10px;
+    }
+}
+
+@media (min-width:450px) and (max-width:500px) {
+    #logBtn {
+        float: none;
+        margin-left: 30%;
+    }
+}
+
+@media (max-width:500px) and (min-width:350px) {
+    .rowFlx {
+        display: block;
+    }
+
+    .header-main h1  {
+        font-size: 15px;
+        float: none;
+    }
+
+    .aboutUsh1 {
+        font-size: 15px;
+        float: none;
+    }
+    
+    .header-main img {
+        float: none
+    }
+
+    #DivNavSearch {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .NavSearch {
+        width: 40%
+    }
+
+    #NavSearchSelect {
+        width: 30%;
+    }
+
+    .bar {
+        padding: 5px;
+    }
+
+    .bar button {
+        font-size: 8px;
+    }
+
+    .bar a {
+        font-size: 8px;
+    }
+
+    #LogBtn {
+        float: none;
+        margin-left: 25%;
+    }
+
+    .f1 {
+        padding: 5px;
+    }
+
+    .f1 a {
+        font-size: 8px;
+    }
+
+    .f1 img {
+        float: none;
+        margin-left: 0%;
+    }
+
+    footer {
+        padding: 6px;
+    }
+
+    footer a {
+        padding: 5px;
+    }
+
+    .bottom {
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 8px;
+    }
+    .flex{
+        display: block;
+    }
+}
+
+@media (min-width:350px) and (max-width:400px) {
+    #LogBtn {
+        float: none;
+        margin: 10%;
+    }
+
+    .bar {
+        padding: 5px;
+    }
+}
+
+@media (max-width:350px) and (min-width:250px) {
+
+    .rowFlx {
+        display: block;
+    }
+
+    .header-main h1 {
+        font-size: 10px;
+        float: none;
+    }
+    .aboutUsh1{
+        font-size: 10px;
+        float: none;
+    }
+
+    .header-main img {
+        float: none
+    }
+
+    #DivNavSearch {
+        margin-left: 3%;
+        margin-right: 0%;
+    }
+
+    .NavSearch {
+        width: 30%
+    }
+
+    #NavSearchSelect {
+        width: 20%;
+    }
+
+    .bar {
+        padding: 5px;
+    }
+
+    .bar button {
+        font-size: 5px;
+    }
+
+    .bar a {
+        font-size: 5px;
+    }
+
+    #LogBtn {
+        float: none;
+        margin-left: 15%;
+    }
+
+    .f1 {
+        padding: 5px;
+    }
+
+    .f1 a {
+        font-size: 5px;
+    }
+
+    .f1 img {
+        float: none;
+        margin-left: 0%;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    footer a {
+        padding: 5px;
+    }
+
+    .bottom {
+        margin-left: 0%;
+        margin-right: 0%;
+        font-size: 5px;
+    }
+
+}
