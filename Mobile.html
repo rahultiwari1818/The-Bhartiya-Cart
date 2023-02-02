@@ -35,8 +35,8 @@
 	</nav>
 	<main>
 		<div class="conatainer-fluid">
-			<div class="row m-4 p-1">
-				<div class="col-5 p-1 border-right">
+			<div class="rows m-4 p-1" id="maindiv">
+				<div class="cols-5 p-1 border-right" id="div1">
 					<div id="demo" class="carousel slide" data-ride="carousel">
 
 
@@ -63,7 +63,7 @@
 
 					</div>
 				</div>
-				<div class="col-5 border-right">
+				<div class="cols-5 border-right" id="div2">
 					<h3 id="heading"></h3>
 					<h6 id="desc"></h6>
 					<br><br><br>
@@ -99,7 +99,7 @@
 					<ul id="list">
 					</ul>
 				</div>
-				<div class="col-2 p-3">
+				<div class="cols-2 p-3" id="div3">
 					<h3 id="price"></h3>
 					<h5 class="color-green">In Stock</h5>
 					<br>
@@ -131,46 +131,47 @@
 
 	<!-- ---------script------------------------------- -->
 				<script>
-					const xhr = new XMLHttpRequest();
-					const filename = localStorage.getItem("page");
-					xhr.open("GET",`./JsonFiles/${filename}`,true);
-					xhr.onload = function (event) {
-						if (this.status === 200) {
-						let responseObj = JSON.parse(this.responseText);
-						//console.log(responseObj)
-						$("#img1").attr("src", `${responseObj.img1}`);
-						$("#img2").attr("src", `${responseObj.img2}`);
-						$("#img3").attr("src", `${responseObj.img3}`);
-						$("#heading").text(`${responseObj.heading}`);
-						$("#desc").text(`${responseObj.desc}`);
-						$("#tech").text(`${responseObj.tech}`);
-						$("#model").text(`${responseObj.model}`);
-						$("#scrsize").text(`${responseObj.scrsize}`);
-						$("#wc").text(`${responseObj.wc}`);
-						$("#os").text(`${responseObj.os}`);
-						$("#brand").text(`${responseObj.brand}`);
-						$("#price").html( `<sup>&#8360;</sup> ${responseObj.price}`);
-						//console.log(responseObj.price)
+						const xhr = new XMLHttpRequest();
+						const filename = localStorage.getItem("page");
+						xhr.open("GET",`./JsonFiles/${filename}`,true);
+						xhr.onload = function (event) {
+							if (this.status === 200) {
+							let responseObj = JSON.parse(this.responseText);
+							//console.log(responseObj)
+							$("#img1").attr("src", `${responseObj.img1}`);
+							$("#img2").attr("src", `${responseObj.img2}`);
+							$("#img3").attr("src", `${responseObj.img3}`);
+							$("#heading").text(`${responseObj.heading}`);
+							$("#desc").text(`${responseObj.desc}`);
+							$("#tech").text(`${responseObj.tech}`);
+							$("#model").text(`${responseObj.model}`);
+							$("#scrsize").text(`${responseObj.scrsize}`);
+							$("#wc").text(`${responseObj.wc}`);
+							$("#os").text(`${responseObj.os}`);
+							$("#brand").text(`${responseObj.brand}`);
+							$("#price").html( `<sup>&#8360;</sup> ${responseObj.price}`);
+							//console.log(responseObj.price)
 
-						//Through JavaScript....
-							// let list = document.getElementById("list");
-							// responseObj.list.forEach((text) => {
-							// 	list.innerHTML += `<li>${text}</li>`;
-							// });
+							//Through JavaScript....
+								// let list = document.getElementById("list");
+								// responseObj.list.forEach((text) => {
+								// 	list.innerHTML += `<li>${text}</li>`;
+								// });
 
-						//Through Jquery
-							let list = document.getElementById("list");
-							responseObj.list.forEach((text) => {
-								//list.innerHTML += ;
-								$("#list").append(`<li>${text}</li>`);
-							});
-					}
-				else {
-					console.log("Some Error Occured")
-				}
-			}
-			xhr.send();
+							//Through Jquery
+								let list = document.getElementById("list");
+								responseObj.list.forEach((text) => {
+									//list.innerHTML += ;
+									$("#list").append(`<li>${text}</li>`);
+								});
+							}
+							else {
+								console.log("Some Error Occured")
+							}
+						}
+					xhr.send();
 				</script>
+				
 </body>
 
 </html>
