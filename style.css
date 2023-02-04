@@ -349,7 +349,7 @@ footer a:hover {
 }
 
 /* ---------------------------Product Main Pages-------------------- */
-#maincont {
+/* #maincont {
     border: 2px solid green;
 }
 
@@ -427,7 +427,93 @@ footer a:hover {
     font-size: 17;
     color: black;
     font-weight: bold;
+} */
+
+.row-div {
+    display: flex;
+    justify-content: space-around;
 }
+
+.d-flx {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-div {
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-div :hover {
+    transform: scale(1.15);
+    transition: transform 0.5s;
+    transform: scale(1.03);
+    opacity: 0.5s;
+    opacity: 1;
+}
+.imgstyle{
+    height: 213px;
+    width: 210px;
+}
+
+.imgstyle:hover {
+    transform: scale(1.15);
+    transition: transform 0.5s;
+    transform: scale(1.03);
+}
+
+.p_infodiv {
+    margin: 5% 2% 2% 2%;
+}
+
+.p_name {
+    font-size: 12.5px;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.p_oldprice {
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+.p_discount {
+    color: red;
+    font-size: 16px;
+}
+
+.p_netvalue {
+    font-size: 17;
+    color: black;
+    font-weight: bold;
+}
+/* Media Quries for Product-Main Pages */
+@media (max-width:1300px) and (min-width:550px) {
+    .product-div{
+        display: block;
+    }
+}
+@media (max-width:950px) and (min-width:550px) {
+    .product-div{
+        display: block;
+    }
+    .imgstyle{
+        width: 70%;
+    }
+}
+@media (max-width:550px) {
+    .row-div{
+        display: block;
+    }
+}
+@media (max-width:430px) {
+    .imgstyle{
+        width: 90%;
+    }
+}
+
 /* About Us page */
 .dis-flex{
     display: flex;

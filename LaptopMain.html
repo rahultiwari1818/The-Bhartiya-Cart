@@ -8,246 +8,41 @@
     <title>LaptopMain</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="./Logo.jpeg">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-
-    <style>
-        .cont {
-            margin-top: 0.5%;
-            margin-left: 5%;
-            margin-right: 5%;
-            margin-bottom: 0.5%;
-            padding: 2%;
-        }
-
-        header {
-            padding: 10px;
-            background: white;
-            display: flex;
-        }
-
-        header h1 a {
-            color: black;
-        }
-
-        .bar {
-            top: 0;
-            float: initial;
-            z-index: 10;
-            background-color: rgb(18, 26, 50);
-            padding: 10px;
-            position: sticky;
-        }
-
-        .navbtn {
-            font-size: 20px;
-            background: none;
-            outline: none;
-            color: #fff;
-        }
-
-        .navbtn:hover {
-            outline: 1px solid white;
-        }
-
-        .left {
-            float: right;
-        }
-
-        .left:hover {
-            color: red;
-        }
-
-        #NavSearchSelect {
-            padding: 5px;
-            background: rgba(0, 0, 0, .10);
-        }
-
-        #DivNavSearch {
-            display: flex;
-            padding: 0px;
-            margin-left: 35%;
-            margin-right: 35%;
-
-        }
-
-        .NavSearch {
-            padding: 2px;
-            width: 100%;
-            margin-top: 0px;
-        }
-
-        .NavSearch:focus {
-            outline: 2px solid gold;
-        }
-
-        #search {
-            padding: 3px;
-            background-color: gold;
-        }
-
-        #maincont {
-            border: 2px solid green;
-        }
-
-        .rowcont {
-            justify-content: space-evenly;
-            flex-direction: row;
-            display: flex;
-            padding: 5px;
-        }
-
-        .subdiv {
-
-            flex: 1;
-            margin: 5px;
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            border-radius: 5px;
-            border: 2px solid rgba(167, 165, 165, 0.857);
-            background-color: rgb(215, 214, 214);
-            height: 190px;
-            padding: 10px;
-        }
-
-        .subdiv:hover {
-            transform: scale(1.15);
-            transition: transform 0.5s;
-            transform: scale(1.03);
-            opacity: 0.5s;
-            opacity: 1;
-        }
-
-        .imgdiv {
-            width: 130px;
-            height: 130px;
-            position: absolute;
-            left: 10px;
-            flex: 1;
-            display: flex;
-        }
-
-        .imgstyle {
-            flex: 1;
-        }
-
-        .imgstyle:hover {
-            transform: scale(1.15);
-            transition: transform 0.5s;
-            transform: scale(1.03);
-        }
-
-        .p_infodiv {
-            position: absolute;
-            right: 0px;
-            display: inline-block;
-        }
-
-        .p_name {
-            font-size: 12.5px;
-            font-weight: bold;
-            word-break: break-all;
-        }
-
-        .p_oldprice {
-            font-size: 10px;
-            text-decoration: line-through;
-        }
-
-        .p_discount {
-            color: red;
-            font-size: 16px;
-        }
-
-        .p_netvalue {
-            font-size: 17;
-            color: black;
-            font-weight: bold;
-        }
-
-        footer {
-            background-color: rgb(18, 26, 50);
-            overflow: hidden;
-        }
-
-        footer a {
-            text-decoration: none;
-            padding: 7px;
-            color: white;
-        }
-
-        footer a:hover {
-            color: red;
-            outline: 2px solid white;
-        }
-
-        .f1 {
-            padding: 2%;
-        }
-
-        .bottom {
-            margin-right: 25%;
-            margin-left: 25%;
-        }
-    </style>
 </head>
 
 <body>
-    <header>
-        <img src="./Logo.jpeg" alt="Logo" style="float:left;" width="6%" height="3%">
-        <div id="DivNavSearch">
-            <select id="NavSearchSelect" name="select">
-                <option value="">All</option>
-                <option value="Mobiles">Mobiles</option>
-                <option value="Laptops">Laptops</option>
-                <option value="TVs">TVs</option>
-                <option value="Accessories">Accessories</option>
-                <option value="Clothes">Clothes</option>
-                <option value="Books">Books</option>
-                <option value="Footwear">Footwear</option>
-                <option value="Luggage">Luggage</option>
-                <option value="Appliances">Appliances</option>
-            </select>
-            <input type="search" name="NavSearch" class="NavSearch">
-            <span id="search"><a href="#" target="_blank"><i class="fa-solid fa-magnifying-glass"></i></a></span>
-        </div>
-        <h1><a href="#" target="_blank"><i class="fa-solid fa-cart-shopping"></i><small>Cart</small></a></h1>
+    <header class="header">
+        <img src="./Logo.jpeg" alt="Logo" width="8%" height="8%">
+        <h1 class="heading-name">The Bhartiya Cart</h1>
+        <h1><a href="#" target="_blank"><i class="fa-solid fa-cart-shopping"></i><br><small>Cart</small></a></h1>
     </header>
 
     <nav class="bar">
-        <a href="./index.html" class="navbtn" target="_blank"><i
-                class="fa-solid fa-house-chimney"></i></a>&nbsp;&nbsp;
+        <a href="./index.html" class="navbtn" target="_blank"><i class="fa-solid fa-house-chimney"></i></a>&nbsp;&nbsp;
         <button class="navbtn">Today's Deal</button>&nbsp;&nbsp;
         <button class="navbtn">Customer Service</button>&nbsp;&nbsp;
         <button class="navbtn">Sell</button>&nbsp;&nbsp;
         <button class="navbtn">Gift-cards</button>&nbsp;&nbsp;
-        <button class="navbtn left"
-            onclick="window.location.href='C:/Users/TIWARIS/Desktop/Project/ProjectLogin.html';">Login<i
+        <button class="navbtn left" onclick="window.location.href='./ProjectLogin.html';">Login<i
                 class="fa fa-arrow-right-to-bracket"></i></button>&nbsp;&nbsp;
     </nav>
-
-
-    <main class="margin">
-
-        <div class="container p-3" id="maincont">
-
-
-            <div class="row , rowcont">
-
-                <div class="col-sm-4  col-md-4 col-lg-4 col-xl-4, subdiv">
+    <main>
+        <div class="container-fluid bg-dark">
+            <div class="row-div border border-dark p-3 bg-secondary">
+                <div class="border border-dark product-div">
                     <div class="imgdiv">
                         <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRwvMkdG_DaMs6sy7HSwcUIS8JSLyEP92UkXgpwMLCR22KB25lFByp1jaksIbgOrUsuuTJrX3_h8w&usqp=CAc"
                             alt="this is Apple iPhone 13 Pro" class="imgstyle" onclick="">
                     </div>
-                    <div class="p_infodiv">
+                    <div class="p-1  p_infodiv">
                         <p class="p_name">LG Gram 16</p>
                         <p class="p_name">Lg Electronics</p>
-                        <p class="p_oldprice">M.R.P.:   ₹1,40,000.00    </p>
+                        <p class="p_oldprice">M.R.P.: ₹1,40,000.00 </p>
                         <p><span class="p_discount">-8% </span>
                             <span class="p_netvalue"><sup>₹</sup>1,32,000/-</span>
                         </p>
@@ -255,15 +50,15 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4  col-md-4 col-lg-4 col-xl-4, subdiv">
+                <div class="border border-dark product-div">
                     <div class="imgdiv">
                         <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRUIXnVCzQwXzjcs8ZaSEjU2X9AGQYwxHo0GKvdzqnaHMPUKknaJiNpaZKGJkE9km3QKRbdnxIjpj4&usqp=CAc"
                             alt="this is black galaxy-s22" class="imgstyle" onclick="">
                     </div>
-                    <div class="p_infodiv">
+                    <div class="p-1  p_infodiv">
                         <p class="p_name">Apple MacBook</p>
                         <p class="p_name">Croma</p>
-                        <p class="p_oldprice">M.R.P.:   ₹1,00,000.00    </p>
+                        <p class="p_oldprice">M.R.P.: ₹1,00,000.00 </p>
                         <p><span class="p_discount">-4% </span>
                             <span class="p_netvalue"><sup>₹</sup>94,999/-</span>
                         </p>
@@ -271,15 +66,15 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4  col-md-4 col-lg-4 col-xl-4, subdiv">
+                <div class="border border-dark product-div">
                     <div class="imgdiv">
                         <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcStbe2CYOFrlzHKZjwehBbVl-aJ5gFRtcdPqMrJX6o0oG_VpXukmxGAyMl7HSKRKxXyMrshTIeEJQ&usqp=CAc"
                             class="imgstyle" onclick="">
                     </div>
-                    <div class="p_infodiv">
+                    <div class="p-1  p_infodiv">
                         <p class="p_name">Hp Victus</p>
                         <p class="p_name">Amazon.in</p>
-                        <p class="p_oldprice">M.R.P.:   ₹1,00,581.00    </p>
+                        <p class="p_oldprice">M.R.P.: ₹1,00,581.00 </p>
                         <p><span class="p_discount">-13% </span>
                             <span class="p_netvalue"><sup>₹</sup>₹57,700/-</span>
                         </p>
@@ -287,15 +82,15 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4  col-md-4 col-lg-4 col-xl-4 subdiv">
+                <div  class="border border-dark product-div">
                     <div class="imgdiv">
                         <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTkhynNpz_uxYMtN0ONooycmlQtCB1scThcyx2nxNhtkjrgXrIh4F_ruk_hzUn5CDntI4yVCJs3Hg&usqp=CAc"
                             alt="this is Redmi K50i 5G" class="imgstyle" onclick="">
                     </div>
-                    <div class="p_infodiv">
+                    <div class="p-1  p_infodiv">
                         <p class="p_name">ASUS Vivobook 15</p>
                         <p class="p_name">Amazon.in</p>
-                        <p class="p_oldprice">M.R.P.:   ₹89,990.00    </p>
+                        <p class="p_oldprice">M.R.P.: ₹89,990.00 </p>
                         <p><span class="p_discount">-38% </span>
                             <span class="p_netvalue"><sup>₹</sup>55,890/-</span>
                         </p>
@@ -305,17 +100,17 @@
             </div>
 
 
-            <div class="row , rowcont">
+            <div class="row-div border border-dark p-3 bg-secondary">
 
-                <div class="col-sm-4  col-md-4 col-lg-4 col-xl-4, subdiv">
+                <div class="border border-dark product-div">
                     <div class="imgdiv">
                         <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSvMZZw9KXG3Pw-BvGVNeW6ha1VnRM7DTGvbttLC50ZcufBjG_KFaCKZW2WKoqZGXCtDKcTyAsXmQ&usqp=CAc"
                             class="imgstyle" onclick="">
                     </div>
-                    <div class="p_infodiv">
+                    <div class="p-1  p_infodiv">
                         <p class="p_name">ASUS TUF Gaming</p>
                         <p class="p_name">Amazon.in</p>
-                        <p class="p_oldprice">M.R.P.:   ₹1,19,990.00    </p>
+                        <p class="p_oldprice">M.R.P.: ₹1,19,990.00 </p>
                         <p><span class="p_discount">-17% </span>
                             <span class="p_netvalue"><sup>₹</sup>99,550/-</span>
                         </p>
@@ -323,15 +118,15 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4  col-md-4 col-lg-4 col-xl-4, subdiv">
+                <div class="border border-dark product-div">
                     <div class="imgdiv">
                         <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSGoGBsrBa_TLTpnt8K3HLrTjXh9WIksaWJJxsJflrshHbYe6G8SLGh66KZv3nslfz3KeITaVIcsBeC&usqp=CAc"
                             alt="this is OnePlus 10 Pro" class="imgstyle" onclick="">
                     </div>
-                    <div class="p_infodiv">
+                    <div class="p-1  p_infodiv">
                         <p class="p_name">ThinkBook 15</p>
                         <p class="p_name">Lenovo India</p>
-                        <p class="p_oldprice">M.R.P.:   ₹70,000.00    </p>
+                        <p class="p_oldprice">M.R.P.: ₹70,000.00 </p>
                         <p><span class="p_discount">-12% </span>
                             <span class="p_netvalue"><sup>₹</sup>59,040/-</span>
                         </p>
@@ -339,15 +134,15 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4  col-md-4 col-lg-4 col-xl-4, subdiv">
+                <div class="border border-dark product-div">
                     <div class="imgdiv">
                         <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRFs8p99NLAVqvr2Cr4HCauRL7n5mScQD1BiAtydrFWH9tUddWiceio9tiGCK4saw1drRR9v-_HeA&usqp=CAc"
                             alt="this is Xiaomi 11T Pro" class="imgstyle" onclick="">
                     </div>
-                    <div class="p_infodiv">
+                    <div class="p-1  p_infodiv">
                         <p class="p_name">Galaxy Book2 Pro</p>
                         <p class="p_name">Samsung.com</p>
-                        <p class="p_oldprice">M.R.P.:   ₹1,50,000.00    </p>
+                        <p class="p_oldprice">M.R.P.: ₹1,50,000.00 </p>
                         <p><span class="p_discount">-5% </span>
                             <span class="p_netvalue"><sup>₹</sup>1,39,990/-</span>
                         </p>
@@ -355,15 +150,15 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4  col-md-4 col-lg-4 col-xl-4, subdiv">
+                <div class="border border-dark product-div">
                     <div class="imgdiv">
                         <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT1A7nP6ESg4UFvGADRf6gR3dpdrToI--d4wUeEgm31bQfXlUGEnMaxjuh4cZOr8qtfuGYxL3eF3F8&usqp=CAc"
                             alt="this is Vivi V23" class="imgstyle" onclick="">
                     </div>
-                    <div class="p_infodiv">
+                    <div class="p-1  p_infodiv">
                         <p class="p_name">Acer Swift X </p>
                         <p class="p_name">Acer Store - India</p>
-                        <p class="p_oldprice">M.R.P.:   ₹1,09,999.00    </p>
+                        <p class="p_oldprice">M.R.P.: ₹1,09,999.00 </p>
                         <p><span class="p_discount">-14% </span>
                             <span class="p_netvalue"><sup>₹</sup>94,999/-</span>
                         </p>
@@ -373,17 +168,17 @@
             </div>
 
 
-            <div class="row , rowcont">
+            <div class="row-div border border-dark p-3 bg-secondary">
 
-                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 subdiv">
+                <div class="border border-dark product-div">
                     <div class="imgdiv">
                         <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRD29D6MG5cixt4A61QWfjKIXw5nQV7WN4mRBwLHLVM992IJPJJ2ZVkukzAUx7Fraa_AtoqdHm2Jg&usqp=CAc"
                             class="imgstyle" onclick="" alt="this Google Pixel 6 Pro">
                     </div>
-                    <div class="p_infodiv">
+                    <div class="p-1  p_infodiv">
                         <p class="p_name">HP Pavilion 14</p>
                         <p class="p_name">Croma</p>
-                        <p class="p_oldprice">M.R.P.:   ₹75,900.00    </p>
+                        <p class="p_oldprice">M.R.P.: ₹75,900.00 </p>
                         <p><span class="p_discount">-4% </span>
                             <span class="p_netvalue"><sup>₹</sup>71,990/-</span>
                         </p>
@@ -391,15 +186,15 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4  col-md-4 col-lg-4 col-xl-4, subdiv">
+                <div class="border border-dark product-div">
                     <div class="imgdiv">
                         <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTLqTnJSHtp_cM-O-uEtxOa8zqIzp7oNOgl5eUWIl91T_rqs11QdKtCf95MtDpBHdgkr11Zg-TaGaxL-nmPOb7YAock3z0YwNzPMWT9NEFgZ4u4IQaOm87LFg&usqp=CAY"
                             class="imgstyle" onclick="" alt="this is 73ha73 ">
                     </div>
-                    <div class="p_infodiv">
+                    <div class="p-1  p_infodiv">
                         <p class="p_name">Asus ZenBook Pro</p>
                         <p class="p_name">Flipcart</p>
-                        <p class="p_oldprice">M.R.P.:   ₹2,50,000.00    </p>
+                        <p class="p_oldprice">M.R.P.: ₹2,50,000.00 </p>
                         <p><span class="p_discount">-12% </span>
                             <span class="p_netvalue"><sup>₹</sup>2,24,990/-</span>
                         </p>
@@ -407,15 +202,15 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4  col-md-4 col-lg-4 col-xl-4, subdiv">
+                <div class="border border-dark product-div">
                     <div class="imgdiv">
                         <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTXH1MiOcyHH_tdL73IM6rC9JH0PjftyiTvIK7qRvSyEblqLVmkEk_etI6uqR24eHqVzQd-UQzh34j3CQlkBSFVZy9P0k5Abh_EHca3L28DTxtGQLsUtOq_&usqp=CAY "
                             alt="this is OPPO Reno8 Pro 5G" class="imgstyle" onclick="">
                     </div>
-                    <div class="p_infodiv">
+                    <div class="p-1  p_infodiv">
                         <p class="p_name">Acer Nitro 5 </p>
                         <p class="p_name">Amazon.in</p>
-                        <p class="p_oldprice">M.R.P.:   ₹99,999.00    </p>
+                        <p class="p_oldprice">M.R.P.: ₹99,999.00 </p>
                         <p><span class="p_discount">-42% </span>
                             <span class="p_netvalue"><sup>₹</sup>57,990/-</span>
                         </p>
@@ -423,15 +218,15 @@
                     </div>
                 </div>
 
-                <div class="col-sm-4  col-md-4 col-lg-4 col-xl-4, subdiv">
+                <div class="border border-dark product-div">
                     <div class="imgdiv">
                         <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRPBFOOxCGgBafx_MJHeqQHSq6VvN7p60a4BZMsc9bdPMLymRNUxhK7Tc3ICmU9isyKeLqnjqyiNt7cezWyGSK4gNJ2ix34dYT8zOlcYNSHnme54kqa4Y--Cg&usqp=CAE"
                             alt="this is OnePlus 9RT 5G" class="imgstyle" onclick="">
                     </div>
-                    <div class="p_infodiv">
+                    <div class="p-1  p_infodiv">
                         <p class="p_name">Lenovo IdeaPad</p>
                         <p class="p_name">Howzzthat.com </p>
-                        <p class="p_oldprice">M.R.P.:   ₹65,990.00    </p>
+                        <p class="p_oldprice">M.R.P.: ₹65,990.00 </p>
                         <p><span class="p_discount">-13% </span>
                             <span class="p_netvalue"><sup>₹</sup>57,990/-</span>
                         </p>
