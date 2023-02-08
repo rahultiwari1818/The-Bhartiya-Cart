@@ -1,0 +1,25 @@
+{
+    "img1":"https://m.media-amazon.com/images/I/611SRh1TG7L._SX679_.jpg",
+    "img2":"https://m.media-amazon.com/images/I/71X4JziMWfL._SX679_.jpg",
+    "img3":"https://m.media-amazon.com/images/I/71MP+npBEXL._SX679_.jpg",
+    "heading":"ASUS Vivobook 14",
+    "desc":"Intel Core i7-1165G7 11th Gen, 14' (35.56 cm) FHD, Thin and Laptop (16GB/512GB SSD/Intel Iris Xe Graphics/Windows 11/Office 2021/FP Sensor/Silver/1.55 kg)",
+    "brand":"ASUS",
+    "model":"Vivobook 14 (2022)",
+    "scrsize":"35.56 Centimetres ",
+    "color":"Transparent Silver",
+    "hdsize":"512 GB",
+    "cpu":"Core i7",
+    "ram":"16 GB",
+    "os":"Windows 11 Home",
+    "list":["Processor: 11th Gen Intel Core i7-1165G7 Processor 2.8 GHz (12M Cache, up to 4.7 GHz, 4 cores)11th Gen Intel Core i7-1165G7 Processor 2.8 GHz (12M Cache, up to 4.7 GHz, 4 cores)",
+    "Memory: 16GB (8GB onboard + 8GB SO-DIMM) DDR4 3200MHz | Storage: 512GB M.2 NVMe PCIe 3.0 SSD with 1x 2.5-inch SATA slot for HDD/SSD Storage upgrade up to 1TB",
+    "Display: 14-Inch (35.56 cms) LED-Backlit LCD, FHD (1920 x 1080) 16:9, 220nits, NanoEdge bezel, Anti-Glare Plane with 45% NTSC, 82% Screen-To-Body Ratio",
+    "Graphics: Integrated Intel UHD Graphics",
+    "Operating System: Windows 11 Home with Lifetime Validity | Software Included: Office Home and Student 2021",
+    "Design: 1.99 cm Thin | Thin & Light | 1.55 kg weight | 37WHrs, 2S1P, 2-cell, Li-ion | Up to 6 hours Battery life, Note: Battery life depends on conditions of usage",
+    "Keyboard: Chiclet Keyboard",
+    "Other: VGA camera | Wi-Fi 5(802.11ac) (Dual band) 1*1 + Bluetooth 4.1 | SonicMaster, Built-in speaker, Built-in microphone | with Cortana support"
+],
+        "price":71000
+}

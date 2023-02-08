@@ -1,0 +1,23 @@
+{
+    "img1":"https://m.media-amazon.com/images/I/41kRKVrKe2L._SY300_SX300_QL70_FMwebp_.jpg",
+    "img2":"https://m.media-amazon.com/images/I/61o5qu9M3mL._SX522_.jpg",
+    "img3":"https://m.media-amazon.com/images/I/61cNDl0PttL._SX522_.jpg",
+    "heading":"Lenovo IdeaPad Slim 3",
+    "desc":"Intel Core i5 12th Gen 15.6' (39.62cm) FHD Thin & Light Laptop (8GB/512GB SSD/Windows 11/Office 2021/Backlit/2Yr Warranty/3months Game Pass/Arctic Grey/1.63Kg)",
+    "brand":"Lenovo",
+    "model":"IdeaPad 3 15IAU7",
+    "scrsize":"15.6 Inches",
+    "color":"Arctic Grey",
+    "hdsize":"512 GB",
+    "cpu":"Core i5",
+    "ram":"8 GB",
+    "os":"Windows 11 Home",
+    "list":["Processor: 12th Gen Intel Core i5-1235U | Speed: 10 Cores (2xP-core 1.3/4.4GHz, 8xE-core 0.9/3.3GHz) | 12Threads | 12MB Cache",
+    "Display: 15.6 FHD (1920x1080)| TN Technology | 250Nits Brightness | Anti Glare",
+    "Memory and Storage: 8GB RAM DDR4-3200 Upgradable Up to 16GB | 512 GB SSD",
+    "OS and Software: Windows 11 Home 64 | Office Home and Student 2021 | Xbox GamePass Ultimate 3-month subscription*",
+    "Design: 4 side narrow bezel | 1.99 cm Thin & 1.63 kg Light || Smart Learning Features : Lenovo Aware | Whisper Voice | Eye Care",
+    "Battery Life: 3-Cell 45Wh | Upto 6 Hours | Rapid Charge (Up to 80% in 1 Hour)"
+],
+        "price":61000
+}

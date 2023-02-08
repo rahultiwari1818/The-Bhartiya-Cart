@@ -1,0 +1,25 @@
+{
+    "img1":"https://m.media-amazon.com/images/I/41CQCMPCSdL._SX300_SY300_QL70_FMwebp_.jpg",
+    "img2":"https://m.media-amazon.com/images/I/61Jj60hH8fL._SX522_.jpg",
+    "img3":"https://m.media-amazon.com/images/I/91EB58IR3pL._SX522_.jpg",
+    "heading":"ASUS Vivobook 16X (2022)",
+    "desc":"16.0-inch (40.64 cms) FHD+ 16:10, AMD Ryzen 5 5600H, Thin and Laptop (8GB/512GB SSD/Integrated Graphics/Windows 11/Office 2021/Silver/1.80 kg)",
+    "brand":"ASUS",
+    "model":"Vivobook 16X (2022)",
+    "scrsize":"40.64 Centimetres",
+    "color":"Transparent Silver",
+    "hdsize":"512 GB",
+    "cpu":"Ryzen 5",
+    "ram":"8 GB",
+    "os":"Windows 11 Home",
+    "list":["Processor: AMD Ryzen 5 5600H Mobile Processor (6-core/12-thread, 19MB cache, up to 4.2 GHz max boost)",
+    "Memory: 8GB DDR4 on board 3200MHz with | Storage: 512GB M.2 NVMe PCIe 3.0 SSD",
+    "Display: 16-inch (40.64cm), WUXGA (1920 x 1200) 16:10 aspect ratio, 300nits, 60Hz refresh rate, 45% NTSC color gamut, Anti-glare display",
+    "Graphics: Integrated AMD Radeon Vega 7 Graphics",
+    "Operating System: Windows 11 Home with Lifetime validity | Software Included: Office Home and Student 2021 included with Lifetime validity",
+    "Design: 1.80 ~ 1.84 cm Thin | 1.88 kg weight | Thin and Light Laptop | 50WHrs, 3S1P, 3-cell Li-ion | Up to 8 hours battery life ;Note: Battery life depends on conditions of usage",
+    "Keyboard: Backlit Chiclet Keyboard with Num-key",
+    "Other: VGA camera | Wi-Fi 5(802.11ac) (Dual band) 1*1 + Bluetooth 4.1 | Audio by ICEpower, Built-in speaker, Built-in microphone | with Cortana support | US MIL-STD 810H military-grade standard"
+],
+        "price":37000
+}

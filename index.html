@@ -80,18 +80,18 @@
 					<div class="product border m-3 p-3 bg-white" id="mobile">
 						<h4>Mobiles</h4>
 						<div>
-							<a href="./Mobile.html" target="_blank" onclick="settingLocalStorage(1)"><img
+							<a href="./Mobile.html" target="_blank" onclick="settingLocalStorage('mobile1')"><img
 									src="https://images-eu.ssl-images-amazon.com/images/I/41QPv5h1veL._SX300_SY300_QL70_FMwebp_.jpg"
 									width="45%" class="img-thumbnail p-2 imgS"></a>
-							<a href="./Mobile.html" target="_blank" onclick="settingLocalStorage(2)"><img
+							<a href="./Mobile.html" target="_blank" onclick="settingLocalStorage('mobile2')"><img
 									src="https://images-eu.ssl-images-amazon.com/images/I/315vs3rLEZL._SY445_SX342_QL70_FMwebp_.jpg"
 									width="45%" class="img-thumbnail p-2 imgS"></a>
 						</div>
 						<div>
-							<a href="./Mobile.html" target="_blank" onclick="settingLocalStorage(3)"> <img
+							<a href="./Mobile.html" target="_blank" onclick="settingLocalStorage('mobile3')"> <img
 									src="https://images-eu.ssl-images-amazon.com/images/I/71AvQd3VzqL._AC._SR360,460.jpg"
 									class="img-thumbnail p-2 imgS" width="45%"></a>
-							<a href="./Mobile.html" target="_blank" onclick="settingLocalStorage(4)"> <img
+							<a href="./Mobile.html" target="_blank" onclick="settingLocalStorage('mobile4')"> <img
 									src="https://images-eu.ssl-images-amazon.com/images/I/71WS-0ITj7L._AC._SR360,460.jpg"
 									class="img-thumbnail p-2 imgS" width="45%"></a>
 						</div>
@@ -102,18 +102,18 @@
 					<div class="product border m-3 p-3 bg-white" id="laptop">
 						<h4>Laptops</h4>
 						<div>
-							<a href="https://amzn.eu/d/aDe7J6Q" target="_blank"> <img
+							<a href="./Laptop.html" target="_blank"  onclick="settingLocalStorage('laptop1')"> <img
 									src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/3f0d887d-c33d-4525-8d3a-2cf549e5d6f7._CR0,0,1200,628_SX430_QL70_.jpg"
 									width="47%" class="img-thumbnail p-3 imgS"></a>
-							<a href="https://amzn.eu/d/aDe7J6Q" target="_blank"><img
+							<a href="./Laptop.html" target="_blank"  onclick="settingLocalStorage('laptop2')"><img
 									src="https://m.media-amazon.com/images/I/61M-QNJf4pL._AC_UL320_.jpg" width="47%"
 									class="img-thumbnail p-3  imgS"> </a>
 						</div>
 						<div>
-							<a href="https://a.co/d/2kbvb5C" target="_blank"> <img
+							<a href="./Laptop.html" target="_blank"  onclick="settingLocalStorage('laptop3')"> <img
 									src="https://m.media-amazon.com/images/I/81quK6e6UwL._AC_UY218_.jpg"
 									class="img-thumbnail p-2 imgS" width="47%"></a>
-							<a href="https://a.co/d/iEskYgm" target="_blank"> <img
+							<a href="./Laptop.html" target="_blank"  onclick="settingLocalStorage('laptop4')"> <img
 									src="https://m.media-amazon.com/images/I/51fSSwDxnTL._AC_UY218_.jpg"
 									class="img-thumbnail p-2 imgS" width="47%"></a>
 						</div>
@@ -124,18 +124,18 @@
 					<div class="product border m-3 p-3 bg-white" id="television">
 						<h4>Televisions</h4>
 						<div>
-							<a href="https://a.co/d/77YvxhC" target="_blank"> <img
+							<a href="./Television.html" target="_blank" onclick="settingLocalStorage('television1')"> <img
 									src="https://m.media-amazon.com/images/I/51EPd38RHQL._AC_UY218_.jpg" width="45%"
 									class="img-thumbnail p-2 m-1 imgS"></a>
-							<a href="https://a.co/d/5IWxfuX" target="_blank"> <img
+							<a href="./Television.html" target="_blank" onclick="settingLocalStorage('television2')"> <img
 									src="https://m.media-amazon.com/images/I/71GUJVSDv3L._AC_UY218_.jpg" width="45%"
 									class="img-thumbnail p-2 m-1 imgS"> </a>
 						</div>
 						<div>
-							<a href="https://a.co/d/hkgxJGy" target="_blank"> <img
+							<a href="./Television.html" target="_blank" onclick="settingLocalStorage('television3')"> <img
 									src="https://m.media-amazon.com/images/I/81UkjRSYpsS._AC_UY218_.jpg"
 									class="img-thumbnail p-2 m-1 imgS" width="45%"></a>
-							<a href="https://a.co/d/68GxzIm" target="_blank"> <img
+							<a href="./Television.html" target="_blank" onclick="settingLocalStorage('television4')"> <img
 									src="https://m.media-amazon.com/images/I/A1VI0Hc56lL._AC_UY218_.jpg"
 									class="img-thumbnail p-2 m-1 imgS" width="45%"></a>
 						</div>
@@ -276,8 +276,8 @@
 	</main>
 	<!-- -----------------script--------------------- -->
 			<script>
-				function settingLocalStorage(num){
-					localStorage.setItem("page",`mobile${num}.json`);	
+				function settingLocalStorage(product){
+					localStorage.setItem("page",`${product}.json`);	
 				}
 			</script>
 	<footer>

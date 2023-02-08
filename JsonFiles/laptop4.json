@@ -1,0 +1,22 @@
+{
+    "img1":"https://m.media-amazon.com/images/I/71iiXU7HHkL._SX679_.jpg",
+    "img2":"https://m.media-amazon.com/images/I/61atYCE26YL._SX679_.jpg",
+    "img3":"https://m.media-amazon.com/images/I/61MWRgXyqdL._SX679_.jpg",
+    "heading":"Mi Notebook Pro",
+    "desc":"QHD+ IPS Anti-Glare Display Intel Core i5-11300H 11th Gen 14 inch (35.56 cm) Thin & Light Laptop (8GB/512GB SSD/Iris Xe Graphics/Windows 11/MS Office 21/Backlight KB/FP Sensor/1.4 Kg)",
+    "brand":"MI",
+    "model":"Mi Notebook Pro",
+    "scrsize":"14 Inches",
+    "color":"Lustrous Gray",
+    "hdsize":"512 GB",
+    "cpu":"Core i5",
+    "ram":"8 GB",
+    "os":"Windows 11 Home",
+    "list":["Processor: 11th Gen Intel Tiger Lake Core i5-11300H processor| Speed: 3.1 GHz(base) - 4.4 GHz(max) | 4 cores | 8 Threads | 8 MB Cache",
+    "Display - 35.56 centimetres IPS QHD+ resolution (2560x1600) |16:10 aspect ratio, 100% sRGB,215 PPI, 1000:1 contrast ratio | Anti Glare | TUV low Blue light",
+    "Memory & Storage: 8GB DDR4 3200 MHz | 512GB PCIe NVMe M.2 SSD",
+    "Operating System & Software: Windows 11 Home | Microsoft Office Home and Student 2021; Graphics: Intel Iris Xe graphics",
+    "Resolution: 2.5k; Native Resolution: 2500 X 1600 Pixels"
+],
+        "price":55000
+}
