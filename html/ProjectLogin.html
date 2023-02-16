@@ -1,0 +1,81 @@
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="/images/Logo.jpeg">
+</head>
+<style></style>
+
+<body>
+  <header class="header">
+    <img src="/images/Logo.jpeg" alt="Logo" style="float:left;" width="6%" height="3%">
+    <h1 class="heading-name">The Bhartiya Cart</h1>
+    <h1><a href="#" target="_blank"><i class="fa-solid fa-cart-shopping"></i><br><small>Cart</small></a></h1>
+  </header>
+
+  <nav class="bar">
+    <a class="navbtn" href="./index.html"><i class="fa-solid fa-house-chimney"></i></a>&nbsp;&nbsp;
+    <button class="navbtn">Today's Deal</button>&nbsp;&nbsp;
+    <button class="navbtn">Customer Service</button>&nbsp;&nbsp;
+    <button class="navbtn">Sell</button>&nbsp;&nbsp;
+    <button class="navbtn">Gift-cards</button>&nbsp;&nbsp;
+
+  </nav>
+  <main>
+    <div class="container mt-5 mb-5" id="main">
+		<div class="cont-form">
+			<h2>Login</h2>
+			<form name="loginForm" method="post">
+			  <div class="user-box" id="divUser">
+				<input type="text" name="uname"  id="uname" required pattern="[A-Za-z0-9]+$" title="UserName should only have Alphabets and Numbers!!">
+				<label>Username</label>
+			  </div>
+			  <div class="user-box" id="divPass">
+				<input type="password" name="passwd"  id="passwd" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+				<label>Password</label>
+			  </div>
+			  <center>
+				<button type="submit" class="btn1">Login</button><br>
+				<h4><u>or login using</u></h4>
+				<div class="d-flex justify-content-center">
+				  <h3> <a href="http://facebook.com" target="_blank" rel="noopener noreferrer"   class="icn"> <i
+						  class="fa-brands fa-facebook"></i></a></h3> &nbsp;&nbsp;
+				  <h3> <a href="http://google.com" target="_blank" rel="noopener noreferrer"  class="icn"><i
+						  class="fa-brands fa-google" style="--fa-secondary-color: red;"></i></a></h3>&nbsp;&nbsp;
+				  <h3><a href="http://twitter.com" target="_blank" rel="noopener noreferrer"  class="icn"><i
+						  class="fa-brands fa-twitter"></i></a></h3>
+				</div>
+			  </center>
+			  <br>
+			  <h3>New user</h3>
+			  <button onclick="signUp()" class="btn1-SL">SignUp<i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+			</form>
+		  </div>
+    </div>
+  </main>
+  <footer>
+    <div class="f1">
+      <a href="./About us.html" target="_blank">About Us</a>&nbsp;&nbsp;
+      <a href="#">Careers</a>&nbsp;&nbsp;
+      <a href="#">Blogs</a>&nbsp;&nbsp;
+      <a href="#">Help</a>&nbsp;&nbsp;
+      <img src="/images/Logo.jpeg" alt="Logo" height="10%" width="10%" style="float:right;" class="img-thumbnail">
+    </div>
+    <hr class="border border-dark">
+    <div class="bottom">
+      <a href="#">Conditions of Use</a>&nbsp;&nbsp;
+      <a href="./ProjectPrivacy.html" target="_blank">Privacy Policy</a>&nbsp;&nbsp;
+      <a href="#">Internet Based Ads</a>&nbsp;&nbsp;
+      <a href="#">The Bhartiya Cart</a>&nbsp;&nbsp;
+      <a href="#">&copy;2003-2022</a>
+    </div>
+  </footer>
+  <script src="/script/toggleUI.js"></script>
+</body>
+
+</html>

@@ -162,7 +162,7 @@ footer a:hover {
     color: black;
 }
 
-#main .cont-form {
+/* #main .cont-form {
     margin-top: 40%;
     margin-bottom: 5%;
     margin-left: 40%;
@@ -217,6 +217,69 @@ footer a:hover {
     top: -20px;
     left: 0;
     color: #03e9f4;
+    font-size: 12px;
+} */
+.cont-form {
+    margin: auto;
+    
+    width: 40%;
+    padding: 40px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+@media (max-width:1000px) {
+     .cont-form{
+        top:50%;
+        width: 70%;
+        font-size: medium;
+    }
+}
+ .cont-form h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.user-box {
+    position: relative;
+}
+.user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+ .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.user-box input:focus~label,
+.user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color:chartreuse;
+    font-size: 12px;
+}
+
+.user-box input:focus:invalid~label{
+    top: -20px; 
+    left: 0;
+    color: red;
     font-size: 12px;
 }
 
