@@ -21,7 +21,7 @@
 		<h1><a href="#" target="_blank"><i class="fa-solid fa-cart-shopping"></i><br><small>Cart</small></a></h1>
 	</header>
 	<nav class="bar">
-		<a href="./index.html" class="navbtn" target="_blank"><i
+		<a href="/index.html" class="navbtn" target="_blank"><i
 				class="fa-solid fa-house-chimney"></i></a>&nbsp;&nbsp;
 		<button class="navbtn">Today's Deal</button>&nbsp;&nbsp;
 		<button class="navbtn">Customer Service</button>&nbsp;&nbsp;
@@ -125,33 +125,9 @@
 		</div>
 	</footer>
 	<!-- Ajax Script for Laptops------------- -->
+	<script src="/script/ajax-jquery.js"></script>
 	<script>
-		const xhr = new XMLHttpRequest;
-		const filename = localStorage.getItem("page");
-		xhr.open("GET",`/JsonFiles/${filename}`,true);
-		xhr.onload =  function (event) {
-			if(this.status == 200){
-				let responseObj = JSON.parse(this.responseText);
-				$("#img1").attr("src",responseObj.img1);
-				$("#img2").attr("src", `${responseObj.img2}`);
-				$("#img3").attr("src", `${responseObj.img3}`);
-				$("#heading").text(`${responseObj.heading}`);
-				$("#desc").text(`${responseObj.desc}`);
-				$("#model").text(`${responseObj.model}`);
-				$("#scrsize").text(`${responseObj.scrsize}`);
-				$("#brand").text(`${responseObj.brand}`);
-				$("#display").text(`${responseObj.display}`);
-				$("#resolution").text(`${responseObj.resolution}`);
-				$("#mounting").text(`${responseObj.mounting}`);
-				$("#price").html( `<sup>&#8360;</sup> ${responseObj.price}`);
-				let list = document.getElementById("list");
-				responseObj.list.forEach((text) => {
-										//list.innerHTML += ;
-					$("#list").append(`<li>${text}</li>`);
-				});			
-			}			
-		}
-		xhr.send();
+		televisionPageDataLoad();
 	</script>
 </body>
 </html>
