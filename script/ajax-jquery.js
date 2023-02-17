@@ -4,7 +4,7 @@ const mobilePageDataLoad=()=>{
 
     const xhr = new XMLHttpRequest();
     const filename = localStorage.getItem("page");
-    xhr.open("GET",`/JsonFiles/${filename}`,true);
+    xhr.open("GET",`../JsonFiles/${filename}`,true);
     xhr.onload = function (event) {
         if (this.status === 200) {
             let responseObj = JSON.parse(this.responseText);
@@ -48,7 +48,7 @@ const mobilePageDataLoad=()=>{
 const laptopPageDataLoad = () =>{
     const xhr = new XMLHttpRequest;
 		const filename = localStorage.getItem("page");
-		xhr.open("GET",`/JsonFiles/${filename}`,true);
+		xhr.open("GET",`../JsonFiles/${filename}`,true);
 		xhr.onload =  function (event) {
 			if(this.status == 200){
 				let responseObj = JSON.parse(this.responseText);
@@ -82,7 +82,8 @@ const laptopPageDataLoad = () =>{
 const televisionPageDataLoad = ()=>{
     const xhr = new XMLHttpRequest;
 		const filename = localStorage.getItem("page");
-		xhr.open("GET",`/JsonFiles/${filename}`,true);
+        
+		xhr.open("GET",`../JsonFiles/${filename}`,true);
 		xhr.onload =  function (event) {
 			if(this.status == 200){
 				let responseObj = JSON.parse(this.responseText);
@@ -114,7 +115,7 @@ const privacyDataLoad = () =>{
     $(document).ready(()=>{
         $.ajax({
                     type: "GET",
-                    url: "/text-xmlFiles/policy.xml",
+                    url: "../text-xmlFiles/policy.xml",
                     dataType: "xml",
                     success: function (xml) {
                         $(xml).find("para").each(function(){
